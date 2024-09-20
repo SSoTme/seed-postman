@@ -4,10 +4,20 @@
   "Name": "seed-postman",
   "ProjectSettings": [
     {
-      "ProjectSettingId": "92a14678-db39-4aaf-a57e-073c094b18d4",
       "Name": "project-name",
       "Value": "seed-postman"
     }
   ],
-  "ProjectTranspilers": []
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "Name": "XmlXsltTransform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset."
+      },
+      "IsSSoTTranspiler": false,
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/",
+      "CommandLine": "xml-xslt-transform -i ../ODXML/DataSchema.odxml -i CreatePostmanCollection.xslt -i ../SMQL/SassyMQLexicon.smql"
+    }
+  ]
 }
