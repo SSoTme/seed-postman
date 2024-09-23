@@ -79,11 +79,11 @@
             <FileSetFiles>
 				<FileSetFile>
                     <RelativePath>
-                        <xsl:value-of select="$odxml/*/*/*/Name" />
+                        <xsl:value-of select="$odxml/*/Name" />
                         <xsl:text>-postman_environment.json</xsl:text>
                     </RelativePath>
                     <xsl:element name="FileContents" xml:space="preserve">{
-	"name": "<xsl:value-of select="$odxml/*/*/*/Name" />",
+	"name": "<xsl:value-of select="$odxml/*/Name" />",
 	"values": [
 		{
 			"key": "protocol",
@@ -116,12 +116,12 @@
 				</FileSetFile>					
                 <FileSetFile>
                     <RelativePath>
-                        <xsl:value-of select="$odxml/*/*/*/Name" />
+                        <xsl:value-of select="$odxml/*/Name" />
                         <xsl:text>-postman.json</xsl:text>
                     </RelativePath>
                     <xsl:element name="FileContents" xml:space="preserve">{
 	"info": {
-		"name": "<xsl:value-of select="$odxml/*/*/*/Name" />",
+		"name": "<xsl:value-of select="$odxml/*/Name" />",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
